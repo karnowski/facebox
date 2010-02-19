@@ -1,13 +1,11 @@
 #  Return an array of filepaths relative to src_dir to include before jasmine specs.
-#src_files:
-#  - lib/source1.js
-#  - lib/source2.js
-#  - dist/**/*.js
+src_files:
+ - jquery.js
+ - facebox.js
 
 #  Return an array of stylesheet filepaths relative to src_dir to include before jasmine specs.
-#stylesheets:
-#  - css/style.css
-#  - stylesheets/*.css
+stylesheets:
+ - facebox.css
 
 #  Return an array of filepaths relative to spec_dir to include before jasmine specs.
 #spec_files:

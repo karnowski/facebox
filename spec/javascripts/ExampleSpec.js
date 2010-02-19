@@ -1,11 +1,24 @@
 describe('Example', function () {
-  it('should have a passing test', function() {
-      expect(true).toEqual(true);
+  
+  afterEach(function(){
+    $("#facebox").hide();
   });
-
-  describe('nested describe', function () {
-     it('should also have a passing test', function () {
-        expect(true).toEqual(true);
-     });
+  
+  describe("Opening a facebox", function(){
+    
+    describe("with text", function(){
+      it('should add the facebox node', function(){
+        $.facebox('Oh Hey!');
+        var fb = $('#facebox');
+        expect(fb.length).toBeTruthy();
+      });
+      
+      it('should contain the correct text', function(){
+        $.facebox('Oh Hey!');
+        var content = $('#facebox .content');
+        expect(content.text()).toEqual('Oh Hey!');
+      });
+    });
+    
   });
 });
