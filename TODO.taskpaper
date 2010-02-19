@@ -1,0 +1,7 @@
+Jasmine:
+- 2010-02-19 LJK: need to make SpecHelper.js (or whatever we name it) a first-class citizen and require it before the specs
+
+Facebox:
+- 2010-02-19 LJk: line 147: should be $().data instead of $().append
+	- need to write a test that demonstrates this clearly
+	- this happens on the image examples, but a clearer, more-focused spec would be better
